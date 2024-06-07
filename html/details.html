@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/Pokeball-1.png">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/pokemon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <main id="pokemonDetail">
+
+    </main>
+
+    <script src="../js/pokemonModel.js"></script>
+    <script src="../js/pokeApi.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script>
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const id = urlParams.get('id');
+
+            pokeApi.getPokemonDetailId(id).then((pokemon) => {
+                const pokemonHtml = convertPokemonToDiv(pokemon);
+                const pokemonDetailElement = document.getElementById('pokemonDetail');
+                
+                if (pokemonDetailElement) {
+                    pokemonDetailElement.innerHTML = pokemonHtml;
+                } else {
+                    console.error('Elemento pokemonDetail não encontrado na página.');
+                }
+            });
+        };
+    </script>
+</body>
+
+</html>

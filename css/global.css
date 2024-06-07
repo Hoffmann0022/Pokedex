@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    color: #222;
+}
+
+body{
+    background-color:  #222;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    height: 105vh;
+    
+    background: linear-gradient(to top, #eceedb,rgb(212, 210, 199));
+}
+
+:root{
+    --normal: linear-gradient(to top, #b3b0ab,rgb(224, 220, 220));
+    --grass: linear-gradient(to top, #34944c,rgb(106, 192, 149));
+    --poison: linear-gradient(to top, #8c5699,rgb(206, 128, 236));
+    --psychic: linear-gradient(to top, #865db4,rgb(202, 123, 226));
+    --ground: linear-gradient(to top, #a5956a,rgb(216, 205, 157));
+    --ice: linear-gradient(to top, #73b1b3,rgb(139, 233, 233));
+    --fire: linear-gradient(to top, #f56248,rgb(255, 162, 99));
+    --rock: linear-gradient(to top, #aa9d7c,rgb(209, 192, 154));
+    --dragon: linear-gradient(to top, #7250a8,rgb(151, 115, 207));
+    --water: linear-gradient(to top, #5c8dcc,rgb(111, 213, 253));
+    --bug: linear-gradient(to top, #97bd59,rgb(206, 248, 152));
+    --dark: linear-gradient(to top, #524545,rgb(114, 99, 99));
+    --fighting: linear-gradient(to top, #855c5c,rgb(189, 131, 131));
+    --ghost: linear-gradient(to top, #7661d4,rgb(166, 137, 247));
+    --steel: linear-gradient(to top, #c0bbbb,rgb(231, 229, 229));
+    --flying: linear-gradient(to top, #547bc4,rgb(163, 226, 255));
+    --electric: linear-gradient(to top, #b3a451,rgb(255, 246, 118));
+    --fairy: linear-gradient(to top, #b975bb,rgb(243, 183, 255));
+}
+
+.grass{
+    background: var(--grass);
+}
+.normal{
+    background: var(--normal);
+}
+.poison{
+    background: var(--poison);
+}
+.psychic{
+    background: var(--psychic);
+}
+.ground{
+    background: var(--ground);
+}
+.ice{
+    background: var(--ice);
+}
+.fire{
+    background: var(--fire);
+}
+.rock{
+    background: var(--rock);
+}
+.dragon{
+    background: var(--dragon);
+}
+.water{
+    background: var(--water);
+}
+.bug{
+    background: var(--bug);
+}
+.dark{
+    background: var(--dark);
+}
+.fighting{
+    background: var(--fighting);
+}
+.ghost{
+    background: var(--ghost);
+}
+.steel{
+    background: var(--steel);
+}
+.flying{
+    background: var(--flying);
+}
+.electric{
+    background: var(--electric);
+}
+.fairy{
+    background: var(--fairy);
+}
+
