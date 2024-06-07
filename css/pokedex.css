@@ -35,9 +35,6 @@ main ol li  {
     transition: .5s ease-in-out;
 }
 
-main ol li:hover{
-    transform: scale(105%);
-}
 
 main ol li {
     display: flex;
@@ -163,4 +160,8 @@ main ol li img{
         width: 80%;
         height: auto;
     }
+    main ol li:hover{
+    transform: scale(105%);
+}
+
 }
